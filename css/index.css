@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Roboto+Mono:wght@300;500&display=swap');
+
+/* FONTS */
+/* font-family: 'Outfit', sans-serif; */
+/* font-family: 'Roboto Mono', monospace; */
+
+
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto Mono', monospace;
+    
+    /* COOLORS */
+    --gainsboro: #d9dcddff;
+    --morning-blue: #99aaa9ff;
+    --new-york-pink: #df8081ff;
+    --tuscan-red: #783e40ff;
+    --green-sheen: #66aeabff;
+}
+
+body {
+    background-color: var(--green-sheen);
+}
