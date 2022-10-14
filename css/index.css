@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Roboto+Mono:wght@300;500&display=swap');
 
-/* FONTS */
-/* font-family: 'Outfit', sans-serif; */
-/* font-family: 'Roboto Mono', monospace; */
-
 :root {
     /* COOLORS */
     --gainsboro: #d9dcddff;
     --morning-blue: #99aaa9ff;
     --new-york-pink: #df8081ff;
     --tuscan-red: #783e40ff;
-    --green-sheen: #66aeabff;
-    --body-color: var(--green-sheen);
+    --green-sheen: rgb(43, 109, 106);
     --button-color: var(--green-sheen);
-    --color: rgb(25,25,22);
+    --color: rgb(72, 16, 23);
+    
+    /* fonts  */
     --outfit: 'Outfit', sans-serif;
     --mono: 'Roboto Mono', monospace;
 }
@@ -25,15 +22,17 @@
 }
 
 body {
-    background-color: var(--body-color);
+    background-color: var(--tuscan-red);
     color: var(--color);
+    height: 100vh;
+    width: 100vw;
     font-family: 'Roboto Mono', monospace;
 }
 
 #mifge {
     display: flex;
     padding: 5px 10px;
-    background-color: gainsboro;
+    background-color: var(--morning-blue);
     font-size: small;
 }
 
@@ -46,38 +45,42 @@ input[type=text] {
     padding-top: 15px;
     padding-bottom: 5px;
     padding-right: 100px;
-    background-color: var(--gainsboro);
+    background-color: var(--morning-blue);
     outline: none;
-    color: black;
+    color: var(--color);
     font-family: var(--mono);
     font-size: medium;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-color: #66aeabff;
+    border-color: var(--green-sheen);
 }
 
 input[type=submit] {
     font-size: xx-large;
     outline: none;
     border-style: none;
-    background-color: gainsboro;
-    color: var(--body-color);
+    background-color: var(--morning-blue);
+    color: var(--green-sheen);
     cursor: pointer;
 }
 
-#hero-box {
-    background-color: var(--tuscan-red);
-    width: 100%;
-    height: 93vh;
+input[type=submit]:hover {
+    font-size: x-large;
 }
+
+/* #hero-box { */
+    /* background-color: var(--tuscan-red); */
+    /* width: 100%; */
+    /* height: 92vh; */
+/* } */
 
 #hero {
     display: flex;
     /* justify-content: center; */
     flex-direction: row;
     font-size: large;
-    color: white;
+    color: var(--gainsboro);
 }
 
 #me {
@@ -112,7 +115,14 @@ input[type=submit] {
     font-family: var(--mono);
 }
 
+#copy {
+    font-size: x-large;
+}
 
+#footer {
+    margin-left: 100px;
+    margin-top: 140px;
+}
 
 
 
