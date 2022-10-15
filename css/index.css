@@ -224,6 +224,11 @@ body {
     color: var(--gainsboro);
 }
 
+.contact-btn:hover {
+    text-decoration: line-through;
+    font-family: var(--outfit);
+}
+
 @media only screen and (max-width: 912px) {
     
     #hero {
