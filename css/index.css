@@ -21,11 +21,11 @@
 }
 
 body {
-    background-color: var(--tuscan-red);
+    background-color: var(--morning-blue);
     height: 100vh;
     width: 100vw;
     font-family: 'Roboto Mono', monospace;
-    color: var(--gainsboro);
+    color: var(--tuscan-red);
 }
 
 /* #mifge { */
@@ -81,12 +81,15 @@ body {
 }
 
 #me {
+    width: 60%;
     margin-top: 250px;
     margin-left: 100px;
 }
 
-#nav {
-    margin-top: 100px;
+#work {
+    width: 40%;
+    margin-top: 450px;
+    margin-left: 200px;
 }
 
 #me-p3 {
@@ -94,21 +97,29 @@ body {
     margin-top: 40px;
 }
 
+.desc {
+    width: 60%;
+    margin-top: 40px;
+}
+
+#nav {
+    margin-top: 150px;
+}
+
 #nav>ul>li {
     list-style: none;
-    color: white;
 }
 
 #nav>ul>li>a {
     text-decoration: none;
     font-family: var(--outfit);
-    color: white;
+    color: var(--gainsboro);
     font-weight: 600;
     font-size: 100px;
 }
 
 #nav>ul>li>a:hover {
-    color: var(--new-york-pink);
+    color: var(--green-sheen);
     font-style: italic;
     font-family: var(--mono);
 }
@@ -136,6 +147,10 @@ body {
     padding-left: 10px;
 }
 
+.items {
+    height: 40%;
+}
+
 .left-item {
     transform: rotate(270deg);
     font-family: var(--outfit);
@@ -144,8 +159,15 @@ body {
     padding: 20px 5px;
 }
 
+.left-item>a {
+    color: var(--tuscan-red);
+    text-decoration: none;
+}
+
 .left-item:hover{
     font-family: var(--mono);
+    color: var(--new-york-pink);
+    text-decoration: overline;
 }
 
 .left-item:nth-child(1) {
@@ -164,9 +186,30 @@ body {
     margin-top: 60px;
 }
 
+@media only screen and (max-width: 912px) {
+    
+    #hero {
+        flex-direction: column;
+    }
 
+    #nav {
+        padding-left: 100px;
+    }
 
+    #me {
+        margin-top: 100px;
+    }
 
+    #m3-p3 {
+        width: 100%;
+    }
+
+    #work {
+        width: 80%;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+}
 
 
 
