@@ -186,7 +186,7 @@ body {
     margin-top: 60px;
 }
 
-#contact-box {
+.contact-box {
     margin-left: 200px;
     /* margin-top: 300px; */
 }
@@ -252,8 +252,20 @@ body {
         margin-left: 100px;
     }
 
+    .desc {
+        width: 100%;
+    }
+
     .about-p {
         width: 100%;
+    }
+
+    .hello {
+        font-size: 100px;
+    }
+
+    .contact-box {
+        margin-left: 100px;
     }
 }
 
